@@ -9,6 +9,13 @@ public class CargoShip extends Ship{
 
     }
 
+    /**
+     * @param maxCapacityInTons
+     *        The max capacity in tons the ship can hold.
+     * @param name
+     *        Name of the ship
+     * @param yearOfManufacturing
+     */
     public CargoShip(int maxCapacityInTons, String name, int yearOfManufacturing){
         super(name, yearOfManufacturing);
         this.maxCapacityInTons = maxCapacityInTons;

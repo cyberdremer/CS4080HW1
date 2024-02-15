@@ -11,7 +11,13 @@ public class CourseDriver {
         Textbook textbookOne = new Textbook("Jon Jones" ,"Clean Code", "TechPublishing");
         Course course1 = new Course("CS4080", instructorOne, textbookOne );
 
+        Instructor instructorTwo = new Instructor("James", "Jones", "3-2727");
+        Textbook textbookTwo = new Textbook("Jones James", "Fast and Dirty Optimization", "JIT Publishing");
+        Course course2 = new Course("CS4991", instructorTwo, textbookTwo);
+
         course1.printCourseInfo();
+
+        course2.printCourseInfo();
 
     }
 

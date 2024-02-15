@@ -9,6 +9,12 @@ public class CruiseShipClass extends Ship {
 
     }
 
+    /**
+     * @param nameOfShip
+     * @param yearOfManufacturing
+     * @param maxPassengers
+     *
+     */
     public CruiseShipClass(String nameOfShip, int yearOfManufacturing, int maxPassengers){
         super(nameOfShip, yearOfManufacturing);
         this.maxPassengers = maxPassengers;

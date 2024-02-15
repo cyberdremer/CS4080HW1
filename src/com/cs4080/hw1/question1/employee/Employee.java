@@ -11,6 +11,12 @@ public class Employee {
         this.employeeSocialSecurityNumber = null;
     }
 
+    /**
+     * Initialize an Employee object wiht the specified information.
+     * @param employeeFirstName
+     * @param employeeLastName
+     * @param employeeSocialSecurityNumber
+     */
     public Employee(String employeeFirstName, String employeeLastName, String employeeSocialSecurityNumber){
         this.employeeFirstName = employeeFirstName;
         this.employeeLastName = employeeLastName;
