@@ -12,11 +12,7 @@ public class Course {
 
     }
 
-    public Course(String name, Instructor instructor, Textbook textbook){
-        this.name = name;
-        this.instructor = instructor;
-        this.textbook = textbook;
-    }
+
 
     public Instructor getInstructor() {
         return instructor;

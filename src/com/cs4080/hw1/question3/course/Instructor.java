@@ -4,17 +4,13 @@ public class Instructor {
     private String firstName, lastName;
     private String officeNumber;
 
-    Instructor(){
+    public Instructor(){
         firstName = null;
         lastName = null;
         officeNumber = null;
     }
 
-    public Instructor(String firstName, String lastName, String officeNumber){
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.officeNumber = officeNumber;
-    }
+
 
     public String getFirstName() {
         return firstName;

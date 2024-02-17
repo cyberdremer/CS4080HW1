@@ -9,11 +9,7 @@ public class Ship {
         yearOfManufacturing = 0;
     }
 
-    public Ship(String shipName, int yearOfManufacturing){
-        this.shipName = shipName;
-        this.yearOfManufacturing = yearOfManufacturing;
 
-    }
 
     public String getShipName() {
         return shipName;

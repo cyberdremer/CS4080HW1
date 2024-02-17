@@ -10,9 +10,8 @@ public class SalariedEmployee extends Employee{
      * @param SSN
      * @param weeklySalary
      */
-    public SalariedEmployee(String firstName, String lastName, String SSN, double weeklySalary){
-        super(firstName, lastName, SSN);
-        this.weeklySalary = weeklySalary;
+    public SalariedEmployee(){
+        super();
 
     }
 

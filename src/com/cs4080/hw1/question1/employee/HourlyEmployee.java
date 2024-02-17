@@ -12,10 +12,9 @@ public class HourlyEmployee extends Employee {
      * @param wage
      * @param hoursWorked
      */
-    public HourlyEmployee(String firstName, String lastName, String SSN, double wage, double hoursWorked){
-        super(firstName, lastName, SSN);
-        this.wage = wage;
-        this.hoursWorked = hoursWorked;
+    public HourlyEmployee(){
+        super();
+
     }
 
     public double getHoursWorked() {

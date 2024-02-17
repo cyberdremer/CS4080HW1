@@ -9,10 +9,10 @@ public class Folder {
     ArrayList<File> fileArrayList;
     ArrayList<Folder> folderArrayList;
 
-    public Folder(String name){
+    public Folder(){
         fileArrayList = new ArrayList<>();
         folderArrayList = new ArrayList<>();
-        this.nameOfFolder = name;
+
 
     }
 
@@ -44,5 +44,27 @@ public class Folder {
     public void printFolderInfo(){
         System.out.println(this.nameOfFolder);
 
+    }
+
+
+    public void printFileStructure(Folder folder, int indentLevel){
+        StringBuilder indentation = new StringBuilder();
+        for(int i = 0; i < indentLevel; i++){
+            indentation.append(" ");
+        }
+        System.out.println(indentation + folder.getNameOfFolder());
+
+        for (Folder subFolders: folder.folderArrayList ){
+            printFileStructure(subFolders, indentLevel + 1);
+        }
+
+        for(File files: folder.getFileArrayList()){
+            System.out.println(indentation + files.getNameOfFile());
+        }
+
+    }
+
+    public void print(){
+        printFileStructure(this, 0);
     }
 }

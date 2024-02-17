@@ -11,11 +11,7 @@ public class Textbook {
         publisher = null;
     }
 
-    public Textbook(String authorName, String title, String publisher){
-        this.authorName = authorName;
-        this.title = title;
-        this.publisher = publisher;
-    }
+
 
     public String getAuthorName() {
         return authorName;

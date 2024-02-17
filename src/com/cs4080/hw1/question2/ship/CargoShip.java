@@ -16,11 +16,9 @@ public class CargoShip extends Ship{
      *        Name of the ship
      * @param yearOfManufacturing
      */
-    public CargoShip(int maxCapacityInTons, String name, int yearOfManufacturing){
-        super(name, yearOfManufacturing);
-        this.maxCapacityInTons = maxCapacityInTons;
 
-    }
+
+
 
     public int getMaxCapacityInTons() {
         return maxCapacityInTons;

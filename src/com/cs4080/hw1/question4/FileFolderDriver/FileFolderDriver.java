@@ -3,36 +3,59 @@ package com.cs4080.hw1.question4.FileFolderDriver;
 import com.cs4080.hw1.question4.File.File;
 import com.cs4080.hw1.question4.Folder.Folder;
 
+import javax.swing.*;
+import java.util.ArrayList;
+
 public class FileFolderDriver {
     public static void main(String args[]){
+        Folder phpFolder = new Folder();
+        phpFolder.setNameOfFolder("php_demo1");
+        Folder sourceFiles = new Folder();
+        sourceFiles.setNameOfFolder("Source Files");
+        Folder phalcon = new Folder();
+        phalcon.setNameOfFolder(".phalcon");
+        Folder app = new Folder();
+        app.setNameOfFolder("app");
+        Folder config = new Folder();
+        config.setNameOfFolder("config");
+        Folder controllers = new Folder();
+        controllers.setNameOfFolder("controllers");
+        Folder library = new Folder();
+        library.setNameOfFolder("library");
+        Folder migrations = new Folder();
+        migrations.setNameOfFolder("migrations");
+        Folder models = new Folder();
+        models.setNameOfFolder("models");
+        Folder views = new Folder();
+        views.setNameOfFolder("views");
+        Folder cache = new Folder();
+        cache.setNameOfFolder("cache");
+        Folder pub = new Folder();
+        pub.setNameOfFolder("public");
+        File htaccess = new File();
+        htaccess.setNameOfFile(".htaccess");
+        File htrouter = new File();
+        htrouter.setNameOfFile(".htrouter.php");
+        File indexHtml = new File();
+        indexHtml.setNameOfFile("index.html");
+        Folder includePath = new Folder();
+        includePath.setNameOfFolder("Include Path");
+        Folder remoteFiles = new Folder();
+        remoteFiles.setNameOfFolder("Remote Files");
 
 
-        Folder php_demo1 = new Folder("php_demo1");
 
+        phpFolder.addFolder(sourceFiles);
+        phpFolder.addFolder(includePath);
+        phpFolder.addFolder(remoteFiles);
 
-        Folder sourceFiles = new Folder("Source Files");
-        Folder phalcon = new Folder(".phalcon");
-        Folder app = new Folder("app");
-        Folder config = new Folder("config");
-        Folder controllers = new Folder("controllers");
-        Folder library = new Folder("library");
-        Folder migrations = new Folder("migrations");
-        Folder models = new Folder("models");
-        Folder views = new Folder("views");
-
-        Folder cache = new Folder("cache");
-        Folder pub = new Folder("public");
-
-        File htaccess = new File("htaccess");
-        File htrouter = new File("htrouter");
-        File index = new File("index.html");
-
-        Folder incPath = new Folder("Include Path");
-        Folder remoteFiles = new Folder("Remote Files");
-
-
-        sourceFiles.addFolder(phalcon);
         sourceFiles.addFolder(app);
+        sourceFiles.addFolder(phalcon);
+        sourceFiles.addFolder(cache);
+        sourceFiles.addFolder(pub);
+        sourceFiles.addFile(htaccess);
+        sourceFiles.addFile(htrouter);
+        sourceFiles.addFile(indexHtml);
 
 
         app.addFolder(config);
@@ -43,54 +66,8 @@ public class FileFolderDriver {
         app.addFolder(views);
 
 
-        sourceFiles.addFolder(cache);
-        sourceFiles.addFolder(pub);
 
-        pub.addFile(htaccess);
-        pub.addFile(htrouter);
-        pub.addFile(index);
-
-        php_demo1.addFolder(sourceFiles);
-        php_demo1.addFolder(incPath);
-        php_demo1.addFolder(remoteFiles);
-
-
-        php_demo1.printFolderInfo();
-        for (Folder php: php_demo1.getFolderArrayList()){
-            if(php.getNameOfFolder().equals("Source Files")){
-                php.printFolderInfo();
-                for (Folder srcFiles : php.getFolderArrayList()){
-                    if(srcFiles.getNameOfFolder().equals("app")){
-                        srcFiles.printFolderInfo();
-
-                        for (Folder a: srcFiles.getFolderArrayList()){
-                            System.out.println("---" + a.getNameOfFolder());
-                        }
-
-                    }
-                    else if (srcFiles.getNameOfFolder().equals("public")) {
-                        srcFiles.printFolderInfo();
-                        for (File publ: srcFiles.getFileArrayList()){
-                            System.out.println("---" + publ.getNameOfFile());
-                        }
-
-                    }
-                    else {
-                        srcFiles.printFolderInfo();
-                    }
-
-
-                }
-
-            }
-            else {
-                php.printFolderInfo();
-            }
-
-        }
-
-
-
+        phpFolder.print();
 
 
 
@@ -101,4 +78,7 @@ public class FileFolderDriver {
 
 
     }
+
+
+
 }

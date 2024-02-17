@@ -4,19 +4,9 @@ public class ComissionEmployee extends  Employee{
     private float commissionRate;
     private double grossRate;
 
-    /**
-     * Initializes a ComissionEmployee object given the provided parameters.
-     *
-     * @param firstName
-     * @param lastName
-     * @param SSN
-     * @param commissionRate
-     * @param grossRate
-     */
-    public ComissionEmployee(String firstName, String lastName, String SSN, float commissionRate, double grossRate){
-        super(firstName, lastName, SSN);
-        this.commissionRate = commissionRate;
-        this.grossRate = grossRate;
+
+    public ComissionEmployee(){
+        super();
     }
 
     public double getGrossRate() {
