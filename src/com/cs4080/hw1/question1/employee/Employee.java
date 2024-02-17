@@ -47,4 +47,10 @@ public class Employee {
     public String getEmployeeLastName() {
         return employeeLastName;
     }
+
+
+    public void print(){
+        System.out.println("Employee Name: " + this.employeeFirstName + " " + this.employeeLastName);
+        System.out.println("Employee Social Security Number: " + this.employeeSocialSecurityNumber);
+    }
 }

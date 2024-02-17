@@ -32,4 +32,14 @@ public class HourlyEmployee extends Employee {
     public void setHoursWorked(double hoursWorked) {
         this.hoursWorked = hoursWorked;
     }
+
+
+
+    @Override
+    public void print(){
+        super.print();
+        System.out.println("Wage: " + this.wage);
+        System.out.println("Hours Worked: " + this.hoursWorked);
+
+    }
 }

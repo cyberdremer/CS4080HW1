@@ -25,12 +25,12 @@ public class EmployeeDriver {
         hourlyEmployeeOne.setHoursWorked(32);
 
 
-        Employee hourlyEmployeeTwo = new HourlyEmployee();
-        hourlyEmployeeOne.setEmployeeFirstName("Mary");
-        hourlyEmployeeOne.setEmployeeLastName("Quinn");
-        hourlyEmployeeOne.setEmployeeSocialSecurityNumber("333-33-333");
-        hourlyEmployeeOne.setWage(19);
-        hourlyEmployeeOne.setHoursWorked(47);
+        HourlyEmployee hourlyEmployeeTwo = new HourlyEmployee();
+        hourlyEmployeeTwo.setEmployeeFirstName("Mary");
+        hourlyEmployeeTwo.setEmployeeLastName("Quinn");
+        hourlyEmployeeTwo.setEmployeeSocialSecurityNumber("333-33-333");
+        hourlyEmployeeTwo.setWage(19);
+        hourlyEmployeeTwo.setHoursWorked(47);
 
 
         ComissionEmployee comissionedEmployee =
@@ -47,6 +47,19 @@ public class EmployeeDriver {
         baseEmployee.setEmployeeLastName("Davenport");
         baseEmployee.setEmployeeSocialSecurityNumber("666-66-666");
         baseEmployee.setBaseSalary(95000);
+
+        salariedEmployeeOne.print();
+        salariedEmployeeTwo.print();
+
+        hourlyEmployeeOne.print();
+        hourlyEmployeeTwo.print();
+
+        comissionedEmployee.print();
+
+        baseEmployee.print();
+
+
+
 
 
 

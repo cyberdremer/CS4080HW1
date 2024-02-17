@@ -22,4 +22,12 @@ public class SalariedEmployee extends Employee{
     public void setWeeklySalary(double weeklySalary) {
         this.weeklySalary = weeklySalary;
     }
+
+
+    @Override
+    public void print(){
+        super.print();
+        System.out.println("Weekly Salary: " + this.weeklySalary);
+
+    }
 }

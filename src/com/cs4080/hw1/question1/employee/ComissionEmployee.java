@@ -24,4 +24,11 @@ public class ComissionEmployee extends  Employee{
     public void setGrossRate(double grossRate) {
         this.grossRate = grossRate;
     }
+
+    @Override
+    public void print() {
+        super.print();
+        System.out.println("Commission Rate: " + this.commissionRate);
+        System.out.println("Gross Rate: " + this.grossRate);
+    }
 }
